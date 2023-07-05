@@ -22,6 +22,6 @@ output_file = "/Users/ashoktimsina/Desktop/gesture_durm/sounds/Bass-Drum-Hit-Lev
 min_silence_len = 100  # Minimum silence duration in milliseconds
 silence_threshold = -30  # Silence threshold in dB
 
-## this needs to be modeified to cover all files
+## this needs to be modeified to cover all sound files
 # Call the remove_silence() function with the specified parameters
 remove_silence(input_file, output_file, min_silence_len, silence_threshold)
