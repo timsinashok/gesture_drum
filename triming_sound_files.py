@@ -23,5 +23,5 @@ min_silence_len = 100  # Minimum silence duration in milliseconds
 silence_threshold = -30  # Silence threshold in dB
 
 ## this needs to be modeified to cover all sound files
-# Call the remove_silence() function with the specified parameters
+# Call the remove_silence() function with the specified parameterss
 remove_silence(input_file, output_file, min_silence_len, silence_threshold)
