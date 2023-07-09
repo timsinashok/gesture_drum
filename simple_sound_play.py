@@ -1,4 +1,4 @@
-# This script does not wait for user to enter number to play sound. 
+# This script is to test whether the sound files and playsound library are working fine or not
 
 from playsound import playsound
 
@@ -14,33 +14,35 @@ snare = 'sounds/mod_Snare-Drum-Hit-Level-1a-.mp3'
 
 prompt = "Enter a number: "
 
-num = input(prompt)
 
-num = int(num)
 
-# Convert number to a string and split it into individual characters
-digit_list = list(str(num))
+# main loop
+while True:
+    
+    #getting user choice
+    #try:
+    num = input(prompt)
 
-# Convert each character back to an integer
-digit_list = [int(digit) for digit in digit_list]
-
-print(digit_list)
-
-for digit in digit_list:
-    if (digit == 1):
+    num = int(num)
+    # except:
+    #     print('Your were supposed to enter a number.')
+    #     continue
+    
+    if (num == 1):
         play_sound(bass)
         print('played')
 
-    if digit == 2:
+    if num == 2:
         play_sound(drum)
 
-    if digit == 3:
+    if num == 3:
         play_sound(floor)    
 
-    if digit == 4:
+    if num == 4:
         play_sound(hi_hat)
     
-    if digit == 5:
+    if num == 5:
         play_sound(snare)
 
 
+## this is just test code
